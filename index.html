@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <script defer src="script.js"></script>
     <link
-    rel="stylesheet"
-    href="https://fonts.googleapis.com/css?family=Rancho&effect=shadow-multiple|3d-float|font-effect-fire|fire-animation"
-  />
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Rancho&effect=shadow-multiple|3d-float|font-effect-fire|fire-animation"
+    />
     <title>SHOPING API 🏪</title>
   </head>
 
@@ -18,11 +17,51 @@
       <h1 class="font-effect-fire-animation">SHOPING API 🏪</h1>
     </header>
     <main>
+      <div>
+        
+        <form id="productForm">
+          <label for="product">Choose a product:</label>
+          <select id="product" name="product">
+              <!-- Пример товаров, можно заменить на динамически загружаемые -->
+              <option value="1" data-price="109.00 EURO">Backpack, Fits 15 Laptops</option>
+              <option value="2" data-price="22.00 EURO">Mens Casual Premium Slim Fit T-Shirts</option>
+              <option value="3" data-price="55.00 EURO">Mens Cotton Jacket</option>
+              <option value="4" data-price="15.00 EURO">Mens Casual Slim Fit</option>
+              <option value="5" data-price="695.00 EURO">Naga Gold & Silver Dragon Station Chain Bracelet</option>
+              <option value="6" data-price="168.00 EURO">Solid Gold Petite Micropave</option>
+              <option value="7" data-price="9.00 EURO">White Gold Plated Princess</option>
+              <option value="8" data-price="10.00 EURO">Pierced Owl Rose Gold Plated Stainless Steel Double</option>
+              <option value="9" data-price="64.00 EURO">WD 2TB Elements Portable External Hard Drive - USB 3.0</option>
+              <option value="10" data-price="109.00 EURO">SanDisk SSD PLUS 1TB Internal SSD - SATA III 6 Gb/s</option>
+              <option value="11" data-price="109.00 EURO">Silicon Power 256GB SSD 3D NAND A55 SLC Cache Performance Boost SATA III 2.5 </option>
+              <option value="12" data-price="114.00 EURO">WD 4TB Gaming Drive Works with Playstation 4 Portable External Hard Drive</option>
+              <option value="13" data-price="599.00 EURO">Acer SB220Q bi 21.5 inches Full HD (1920 x 1080) IPS Ultra-Thin</option>
+              <option value="14" data-price="999.00 EURO">Samsung 49-Inch CHG90 144Hz Curved Gaming Monitor (LC49HG90DMNXZA) – Super Ultrawide Screen QLED</option>
+              <option value="15" data-price="56.00 EURO">BIYLACLESEN Women's 3-in-1 Snowboard Jacket Winter Coats</option>
+              <option value="16" data-price="29.00 EURO">Lock and Love Women's Removable Hooded Faux Leather Moto Biker Jacket</option>
+              <option value="17" data-price="39.00 EURO">Rain Jacket Women Windbreaker Striped Climbing Raincoats</option>
+              <option value="18" data-price="9.00 EURO">MBJ Women's Solid Short Sleeve Boat Neck V</option>
+              <option value="19" data-price="7.00 EURO">Opna Women's Short Sleeve Moisture</option>
+              <option value="20" data-price="12.00 EURO">DANVOUY Womens T Shirt Casual Cotton Short</option>
+          </select>
+          <label for="quantity">Enter quantity:</label>
+          <input type="number" id="quantity" name="quantity" min="1" required>
+          <button type="submit" id="Calculate">Calculate Price</button>
+      </form>
+      <div id="priceInfo"></div>
+
+
       <div id="container-products" class="container-products">
-      <div id="loader" class="loader loader-hide"></div>
+        <div id="loader" class="loader loader-hide">
+
+
+          
+        </div>
       </div>
+      
+</div>
+
     </main>
     <footer></footer>
   </body>
-
 </html>

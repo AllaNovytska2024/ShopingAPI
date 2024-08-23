@@ -27,3 +27,18 @@ const getProducts = () => {
 };
 
 getProducts()
+
+
+
+document.getElementById('productForm').addEventListener('submit', function(event) {
+  event.preventDefault();
+  const productSelect = document.getElementById('product');
+  const selectedOption = productSelect.options[productSelect.selectedIndex];
+  const pricePerUnit = parseFloat(selectedOption.getAttribute('data-price'));
+  const quantity = parseInt(document.getElementById('quantity').value);
+  const totalPrice = pricePerUnit * quantity;
+
+  const priceInfoDiv = document.getElementById('priceInfo');
+  priceInfoDiv.innerHTML = `<p>Price per unit: $${pricePerUnit.toFixed(2)}</p>
+                            <p>Total price: $${totalPrice.toFixed(2)}</p>`;
+});
