@@ -7,11 +7,11 @@ body {
   flex-direction: column;
   min-height: 100vh;
   margin: 0;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
 }
 
 h1 {
-  color: #fff;
+  color: #e7d4d4;
   font-size: 28px;
 }
 
@@ -22,7 +22,7 @@ header {
   padding: 0px 20px;
   width: 100%;
   height: 80px;
-  background-color: #FF0000;
+  background-color: #478365;
 }
 
 main {
@@ -33,7 +33,7 @@ main {
 footer {
   width: 100%;
   height: 50px;
-  background-color: #e2e2e2;
+  background-color: #aec5a7;
 }
 
 .container-products {
@@ -43,8 +43,8 @@ footer {
 }
 
 .product-card {
-  border: 1px solid black;
-  border-radius: 10px;
+  border: 5px double gold;
+  border-radius: 20px;
   padding: 20px 30px;
   display: flex;
   flex-direction: column;
@@ -71,7 +71,6 @@ footer {
   left: 50%;
 }
 
-
 @keyframes rotation {
   0% {
     transform: rotate(0deg);
@@ -84,4 +83,14 @@ footer {
 
 .loader-hide {
   display: none;
+}
+
+.font-effect-fire-animation {
+  color: rgb(198, 228, 224);
+  text-shadow: 8px 9px 15px;
+  text-decoration: rgb(82, 132, 116);
+  text-align: center;
+  font-style: italic;
+
+  font-family: "Times New Roman", Times, bold, serif;
 }
